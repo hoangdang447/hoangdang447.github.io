@@ -52,8 +52,6 @@
         <button onclick="button_click()">Click me!</button>
     </div>
 
-
-
     <script type="text/javascript">
         <!-- Code JavaScript -->
         function button_click() {
@@ -61,7 +59,14 @@
             let result = confirm("I like " + name + ". Do you like me?");
             while (result !== true) {
                 result = confirm("I like " + name + ". Do you like me?");
+            }
+            document.body.className = "bg-heart";
+        }
+    </script>
 
-    </body >
 
-</html >
+
+
+</body>
+
+</html>
